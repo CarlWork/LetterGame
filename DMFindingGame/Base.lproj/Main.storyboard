@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cLM-BX-Ev8">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Finding Game View Controller-->
+        <scene sceneID="uBD-Ng-N4y">
+            <objects>
+                <viewController id="cLM-BX-Ev8" customClass="DMFindingGameViewController" customModule="DMFindingGame" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8ZV-5E-ebi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Target Letter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPL-9F-68c">
+                                <rect key="frame" x="116" y="78" width="183" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q97-dW-b2P">
+                                <rect key="frame" x="323" y="44" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="pEN-WC-dP3">
+                                <rect key="frame" x="24" y="224" width="366" height="448"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="reh-hK-EX0">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="144"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1Q-xA-oM1">
+                                                <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="144"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="A"/>
+                                                <connections>
+                                                    <action selector="tappedLetter:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="hnI-9J-oJv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lW6-U2-AuQ">
+                                                <rect key="frame" x="93.333333333333343" y="0.0" width="86.333333333333343" height="144"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="A"/>
+                                                <connections>
+                                                    <action selector="tappedLetter:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="V7D-bM-oyq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EP-hZ-OHb">
+                                                <rect key="frame" x="186.66666666666666" y="0.0" width="85.999999999999972" height="144"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="A"/>
+                                                <connections>
+                                                    <action selector="tappedLetter:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="ScT-gc-YTD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vsB-yi-QCT">
+                                                <rect key="frame" x="279.66666666666669" y="0.0" width="86.333333333333314" height="144"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="A"/>
+                                                <connections>
+                                                    <action selector="tappedLetter:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="47s-ru-U3H"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Sbm-zh-zOV">
+                                        <rect key="frame" x="0.0" y="152" width="366" height="144"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOV-mK-s5K">
+                                                <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="144"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="A"/>
+                                                <connections>
+                                                    <action selector="tappedLetter:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="wbG-gx-bEv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pod-IJ-2CK">
+                                                <rect key="frame" x="93.333333333333343" y="0.0" width="86.333333333333343" height="144"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="A"/>
+                                                <connections>
+                                                    <action selector="tappedLetter:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="dL9-0y-xkO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fha-jh-m7N">
+                                                <rect key="frame" x="186.66666666666666" y="0.0" width="85.999999999999972" height="144"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="A"/>
+                                                <connections>
+                                                    <action selector="tappedLetter:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="5H3-HA-jEb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87k-c0-cnP">
+                                                <rect key="frame" x="279.66666666666669" y="0.0" width="86.333333333333314" height="144"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="A"/>
+                                                <connections>
+                                                    <action selector="tappedLetter:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="CMG-4y-eKc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="5WB-j7-Jyq">
+                                        <rect key="frame" x="0.0" y="304" width="366" height="144"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OL6-vi-mXk">
+                                                <rect key="frame" x="0.0" y="0.0" width="86.333333333333329" height="144"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="A"/>
+                                                <connections>
+                                                    <action selector="tappedLetter:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="YXG-hx-yG0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPW-VM-G8T">
+                                                <rect key="frame" x="93.333333333333343" y="0.0" width="86.333333333333343" height="144"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="A"/>
+                                                <connections>
+                                                    <action selector="tappedLetter:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="A2l-uT-oRO"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfS-RO-Ot7">
+                                                <rect key="frame" x="186.66666666666666" y="0.0" width="85.999999999999972" height="144"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="A"/>
+                                                <connections>
+                                                    <action selector="tappedLetter:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="Fxw-iu-6lm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="48n-8u-Cux">
+                                                <rect key="frame" x="279.66666666666669" y="0.0" width="86.333333333333314" height="144"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="A"/>
+                                                <connections>
+                                                    <action selector="tappedLetter:" destination="cLM-BX-Ev8" eventType="touchUpInside" id="isl-1F-xOv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Sbm-zh-zOV" firstAttribute="leading" secondItem="pEN-WC-dP3" secondAttribute="leading" id="fEV-y9-x60"/>
+                                    <constraint firstItem="reh-hK-EX0" firstAttribute="leading" secondItem="pEN-WC-dP3" secondAttribute="leading" id="gAG-8M-CEf"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sbm-zh-zOV" secondAttribute="trailing" id="iUI-Aa-hBf"/>
+                                    <constraint firstAttribute="trailing" secondItem="5WB-j7-Jyq" secondAttribute="trailing" id="jj0-xR-EDC"/>
+                                    <constraint firstAttribute="trailing" secondItem="reh-hK-EX0" secondAttribute="trailing" id="jqN-Do-vdJ"/>
+                                    <constraint firstItem="5WB-j7-Jyq" firstAttribute="leading" secondItem="pEN-WC-dP3" secondAttribute="leading" id="qTd-ai-8qL"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8bc-M0-il6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pEN-WC-dP3" firstAttribute="centerY" secondItem="8ZV-5E-ebi" secondAttribute="centerY" id="56G-xh-fxx"/>
+                            <constraint firstItem="pEN-WC-dP3" firstAttribute="height" secondItem="8ZV-5E-ebi" secondAttribute="height" multiplier="0.5" id="RxX-Qs-jB1"/>
+                            <constraint firstAttribute="trailing" secondItem="pEN-WC-dP3" secondAttribute="trailing" constant="24" id="eRg-MH-AIj"/>
+                            <constraint firstItem="pEN-WC-dP3" firstAttribute="leading" secondItem="8bc-M0-il6" secondAttribute="leading" constant="24" id="iLR-Br-TS5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="q97-dW-b2P" id="hiV-DL-iu0"/>
+                        <outlet property="targetLetterLabel" destination="BPL-9F-68c" id="jvy-wF-0xk"/>
+                        <outletCollection property="letterButtons" destination="e1Q-xA-oM1" collectionClass="NSMutableArray" id="f7j-yc-lyc"/>
+                        <outletCollection property="letterButtons" destination="lW6-U2-AuQ" collectionClass="NSMutableArray" id="jfB-Di-O1w"/>
+                        <outletCollection property="letterButtons" destination="7EP-hZ-OHb" collectionClass="NSMutableArray" id="GzP-WI-7jS"/>
+                        <outletCollection property="letterButtons" destination="vsB-yi-QCT" collectionClass="NSMutableArray" id="8Ns-cj-Wgt"/>
+                        <outletCollection property="letterButtons" destination="87k-c0-cnP" collectionClass="NSMutableArray" id="Rge-Pu-azr"/>
+                        <outletCollection property="letterButtons" destination="Fha-jh-m7N" collectionClass="NSMutableArray" id="RgK-Ke-eHx"/>
+                        <outletCollection property="letterButtons" destination="pod-IJ-2CK" collectionClass="NSMutableArray" id="ivn-N0-a6f"/>
+                        <outletCollection property="letterButtons" destination="LOV-mK-s5K" collectionClass="NSMutableArray" id="euG-yH-DU6"/>
+                        <outletCollection property="letterButtons" destination="48n-8u-Cux" collectionClass="NSMutableArray" id="1dz-Fk-oFI"/>
+                        <outletCollection property="letterButtons" destination="HfS-RO-Ot7" collectionClass="NSMutableArray" id="mkc-pR-X6k"/>
+                        <outletCollection property="letterButtons" destination="uPW-VM-G8T" collectionClass="NSMutableArray" id="xgy-Nt-YmD"/>
+                        <outletCollection property="letterButtons" destination="OL6-vi-mXk" collectionClass="NSMutableArray" id="oLT-VS-oB2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b22-Od-7or" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102.89855072463769" y="-9.375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
